@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/splide-default.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap');
+    </style>
+    <script src="../js/main.js"></script>
+    <script src="../js/splide.min.js"></script>
+    <title>parallax</title>
+</head>
+<body>
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Evelynn</a></li>
+                <li><a href="#">Sliders</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+    <div class="mainimage"><img src="../images/1.png" data-speed="2" class="image"></div>
+    <div class="secondimage">
+        <div id="image-carousel" class="splide" aria-label="Beautiful Images">
+            <div class="splide__track">
+                  <div class="splide__list">
+                      <div class="splide__slide">
+                        <h2>Jinx 1</h2>
+                        <div style="height:45px" class="border"></div>
+                          <img src="../images/2.png" style="width:1300px; height:700px" alt="">
+                      </div>
+                      <div class="splide__slide">
+                        <h2>Jinx 2</h2>
+                        <div style="height:45px" class="border"></div>
+                          <img src="../images/3.png" alt="">
+                      </div>
+                    </div>
+            </div>
+    </div>
+
+    </div>
+        
+    
+<script>
+    new Splide( '#image-carousel'  
+       
+    ).mount();
+</script>
+
+</body>
+</html>
