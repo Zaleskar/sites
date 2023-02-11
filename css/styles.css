@@ -6,6 +6,7 @@
 
 body {
     height: 2000px;
+    overflow-x: hidden;
 }
 
 .mainimage {
@@ -16,10 +17,8 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;    
 }
-
 
 .secondimage {
     display: flex;
@@ -27,7 +26,6 @@ body {
     justify-content: center;
     height:1500px;
     background-image: url(https://images.hdqwalls.com/wallpapers/fortnite-arcane-jinx-lol-4k-0u.jpg);
-
 }
 
 .hexcolor {
@@ -37,14 +35,34 @@ body {
     align-items: center;
     text-align: center;
     vertical-align: text-top;
-    transition: all 0.5s ease;
-    
+    transition: all 0.5s ease;      
+}
 
-    
+.quotes {
+    background-color: rgb(81, 156, 185); 
+    height:1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: text-top;
+    transition: all 0.5s ease;   
+    overflow-x: hidden;     
 }
 
 .hexbutton {
     background-color: moccasin;
+    padding: 25px 40px;
+    border: none;
+    border-radius: 3px;
+    font-size: larger;
+    margin-top: 50px;
+    transition: all 0.5s ease;
+    box-shadow:0px 0px 20px 10px black ;
+}
+
+.quotes-button {
+    background-color: gold;
     padding: 25px 40px;
     border: none;
     border-radius: 3px;
@@ -63,25 +81,43 @@ body {
     font-family: 'Tajawal', sans-serif;
 }
 
+.border {
+    height:400px;
+    width:900px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-width: thick;
+    border-style: double;
+    
+}
+
+.quotes-text {
+    font-size: 100px;
+    font-family: 'Tajawal', sans-serif;
+}
+
+.quotes-name {
+    font-size: 35px;  
+}
+
+.actual-quotes {
+    background-color: white;
+    font-size: 50px;
+}
 
 .p {
     font-size: 75px;
     font-family: 'Tajawal', sans-serif;
     margin-bottom: 100px; 
-
 }
-
 
 .splide__slide {
     width: 100%;
     height: auto;
-    padding: 100px;
-    
-   
-
-   
-
-
+    padding: 100px;  
 }
 
 .splide__slide img {
@@ -89,13 +125,9 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    object-fit: cover;
-      
+    object-fit: cover;     
 }
     
-
-
-
 .splide_track {
     display: flex;
     align-items: center;
@@ -108,11 +140,8 @@ body {
 }
 
 .splide .splide__arrow {
-    
-    margin: 160px px;
-    
+    margin: 160px px;  
 }
-
 
 h2 {
     font-family: 'Tajawal', sans-serif;
@@ -120,7 +149,6 @@ h2 {
     text-align: center;
     color: white;
 }
-
 
 .navbar {
     position: fixed;
@@ -132,9 +160,7 @@ h2 {
     width: 100%;
     z-index:99;
     overflow: hidden;
-    
 }
-
 
 div ul {
     list-style-type: none;
@@ -144,7 +170,6 @@ div ul {
 
 li {
     float: left;
-    
 }
 
 li a {

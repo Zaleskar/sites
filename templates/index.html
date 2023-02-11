@@ -17,45 +17,51 @@
 <body>
         <div class="navbar">
             <ul>
-                <li><a href="#">Evelynn</a></li>
-                <li><a href="#">Sliders</a></li>
-                <li><a href="#">HexCode</a></li>
+                <li><a href="#1st">Evelynn</a></li>
+                <li><a href="#image-carousel">Sliders</a></li>
+                <li><a href="#3rd">HexCode</a></li>
+                <li><a href="#4th">Quotes generator</a></li>
+                <li><a href="https://github.com/Zaleskar/sites.git" style="color:skyblue">Git</a></li>
             </ul>
-            <div class="dropdown">
-                <div class="dropdbtn">open</div>
-                <div class="dropdown-content">
-                    1,2,3. etc.
-                </div>
-            </div>
         </div>
-    <div class="mainimage"><img src="../images/1.png" data-speed="2" class="image"></div>
-    <div class="secondimage">
+    <div class="mainimage" id="1st"><img src="../images/1.png" data-speed="2" class="image"></div>
+    <div class="secondimage" id="2nd">
         <div id="image-carousel" class="splide" aria-label="Beautiful Images">
             <div class="splide__track">
                   <div class="splide__list">
                       <div class="splide__slide">
+                        
                         <h2>Jinx 1</h2>
-                        <div style="height:45px" class="border"></div>
                           <img src="../images/2.png" style="width:1300px; height:700px" alt="">
                       </div>
                       <div class="splide__slide">
                         <h2>Jinx 2</h2>
-                        <div style="height:45px" class="border"></div>
+            
                           <img src="../images/3.png" alt="">
                       </div>
                     </div>
             </div>
         </div>
     </div>
-    <div class="hexcolor">  
+    <div class="hexcolor" id="3rd">  
         <div class="container">
             <h1 class="hextext">Hex Generator</h1>
             <h1 class="hexcode-text">Hex code is: #<span class="hexcode">000000</span></h1>      
-            <button class="hexbutton" onclick="changeColor()">Click Me</button>
+            <button class="hexbutton" onclick="changeColor()">Generate random hexcode and color</button>
 
         </div>  
         
     </div>   
+    <div class="quotes" id="4th">
+        <div class="container">
+            <h1 class="quotes-text">Quotes generator</h1>
+            <div class="border">
+                <p class="actual-quotes" style="font-style:italic">“I'm selfish, impatient and a little insecure.”</p>
+                <span class="quotes-name"></span>
+            </div>
+            <button class="quotes-button" onclick="generateQuote()">Next Quote</button>
+        </div>
+    </div>
    
 <script>
     new Splide( '#image-carousel'  
