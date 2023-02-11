@@ -1,3 +1,3 @@
 # sites
-early work, Splide practice 
+early work, practice 
 
