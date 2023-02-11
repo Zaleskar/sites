@@ -50,6 +50,20 @@ body {
     overflow-x: hidden;     
 }
 
+.message-pass {
+    background: rgb(2,0,36);
+    background: linear-gradient(172deg, rgba(2,0,36,1) 0%, rgba(7,95,156,1) 56%);
+    height:1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: text-top;
+    transition: all 0.5s ease;   
+    overflow-x: hidden;     
+
+}
+
 .hexbutton {
     background-color: moccasin;
     padding: 25px 40px;
@@ -71,6 +85,39 @@ body {
     transition: all 0.5s ease;
     box-shadow:0px 0px 20px 10px black ;
 }
+
+.msg-button {
+    position: relative;
+    bottom: 10px;
+    padding: 15px 50px ;
+    transition: all 0.5s ease;
+    font-size: 50px;
+    border-style: none;
+    border-radius:25px;
+    box-shadow:0px 0px 20px 10px black ;
+
+}
+
+.enter-msg {
+    font-size:25px;
+    font-family:'Tajawal', sans-serif; 
+}
+
+#output-msg {
+    font-size:50px;
+    font-family:'Tajawal', sans-serif; 
+
+    
+}
+
+input {
+    height:50px;
+    width:400px;
+    font-size: 45px;
+
+}
+
+
 
 .hexbutton:hover {
     background-color: rgb(222, 49, 84);
@@ -94,6 +141,18 @@ body {
     
 }
 
+.border1 {
+    height:500px;
+    width:800px;
+    background-color: white;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 100px;
+  
+}
+
 .quotes-text {
     font-size: 100px;
     font-family: 'Tajawal', sans-serif;
@@ -108,11 +167,7 @@ body {
     font-size: 50px;
 }
 
-.p {
-    font-size: 75px;
-    font-family: 'Tajawal', sans-serif;
-    margin-bottom: 100px; 
-}
+
 
 .splide__slide {
     width: 100%;
@@ -201,6 +256,24 @@ a:hover {
   }
 
 
+.message-text {
+    font-family: 'Tajawal', sans-serif;
+}
+
+#p-div {
+    overflow: visible;
+    margin-top: 10px;
+    height:auto;
+    width:800px;
+    background-color: white;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 15px;  
+    font-size: 50px; 
+    word-wrap: break-word;
+}
 
 
 

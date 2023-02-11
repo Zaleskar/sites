@@ -10,8 +10,6 @@
         @import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap');
     </style>
-    <script src="../js/main.js"></script>
-    <script src="../js/splide.min.js"></script>
     <title>parallax</title>
 </head>
 <body>
@@ -21,6 +19,7 @@
                 <li><a href="#image-carousel">Sliders</a></li>
                 <li><a href="#3rd">HexCode</a></li>
                 <li><a href="#4th">Quotes generator</a></li>
+                <li><a href="#5th">Pass the message</a></li>
                 <li><a href="https://github.com/Zaleskar/sites.git" style="color:skyblue">Git</a></li>
             </ul>
         </div>
@@ -62,7 +61,19 @@
             <button class="quotes-button" onclick="generateQuote()">Next Quote</button>
         </div>
     </div>
-   
+    <div class="message-pass" id="5th">
+        <div class="container">
+            <h1 class="message-text" style="font-size:80px; color:white;">Pass the message</h1>
+            <div class="border1">
+                <h1 class="enter-msg">Enter a message</h1>
+                <input id="message" type="text" style="border-radius: 15px; font-size: 40px;"></input>
+                <button class="msg-button" onclick="PassMessage()" style="background-color: rgb(177, 177, 177);">Submit</button>       
+            </div>
+            <div id="p-div"><p id="output-msg"></p></div>
+        </div>
+    </div>
+<script src="../js/main.js"></script>
+<script src="../js/splide.min.js"></script>  
 <script>
     new Splide( '#image-carousel'  
        

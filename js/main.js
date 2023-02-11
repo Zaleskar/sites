@@ -43,10 +43,18 @@ console.log(quote)
 
 document.querySelector('.quotes-name').innerHTML = random_quotes;
 document.querySelector('.actual-quotes').innerHTML = quote;
+}
 
+const msg_input = document.getElementById('message');
 
+msg_input.addEventListener("keydown", function(event) {
+    if(event.key == "Enter")
+     PassMessage();
+  })
 
-
+function PassMessage() {
+      document.getElementById('output-msg').innerHTML = msg_input.value;
+      msg_input.value = '';
 
 }
 
