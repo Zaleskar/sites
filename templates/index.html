@@ -9,6 +9,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
     </style>
     <title>parallax</title>
 </head>
@@ -20,7 +21,11 @@
                 <li><a href="#3rd">HexCode</a></li>
                 <li><a href="#4th">Quotes generator</a></li>
                 <li><a href="#5th">Pass the message</a></li>
+                <li><a href="#6th">Counter</a></li>
+                <li><a href="#7th">Time is</a></li>
+                <li><a href="#8th">Groceries</a></li>
                 <li><a href="https://github.com/Zaleskar/sites.git" style="color:skyblue">Git</a></li>
+                
             </ul>
         </div>
     <div class="mainimage" id="1st"><img src="../images/1.png" data-speed="2" class="image"></div>
@@ -30,11 +35,11 @@
                   <div class="splide__list">
                       <div class="splide__slide">
                         
-                        <h2>Jinx 1</h2>
+                        <h3>Jinx 1</h3>
                           <img src="../images/2.png" style="width:1300px; height:700px" alt="">
                       </div>
                       <div class="splide__slide">
-                        <h2>Jinx 2</h2>
+                        <h3>Jinx 2</h3>
             
                           <img src="../images/3.png" alt="">
                       </div>
@@ -70,6 +75,30 @@
                 <button class="msg-button" onclick="PassMessage()" style="background-color: rgb(177, 177, 177);">Submit</button>       
             </div>
             <div id="p-div"><p id="output-msg"></p></div>
+        </div>
+    </div>
+    <div class="quotes" id="6th" style="background-color: white;">
+        <div class="container">
+            <h1 class="quotes-text">Counter</h1>
+            <div class="border">
+                <h1 id="cnt_num" style="font-size: 80px;">0</h1>
+                <span class="quotes-name"></span>
+            </div>
+            <button class="counter-button" onclick="Increase()">Increase</button>
+            <button class="counter-button" onclick="Decrease()">Decrease</button>
+        </div>
+    </div>
+    <div class="time" id="7th">
+        <div class="container_time">
+            <h1 style="font-size: 75px; font-family:'Tajawal', sans-serif;">Time is</h1>
+            <h1 class="actual_time" style="font-size: 100px; font-family:'Tajawal', sans-serif;"><span id="hour">0</span>:<span id="minute">0</span>:<span id="second">00</span><span id = "ampm"></span></h1>
+        </div>
+    </div>
+    <div class="grocery" id="8th">
+        <div id="container_grocery">
+            <h1 style="font-size: 75px; font-family: 'Dancing Script', cursive;">Grocery List</h1>
+            <input type="text" id="grocery_input" style="margin-left: 200px; border:0; outline:0; border-bottom: 2px solid black; font-family:'Dancing Script', cursive">
+            <div id="allitems" style="font-family:'Dancing Script', cursive; color: black;"></div>
         </div>
     </div>
 <script src="../js/main.js"></script>

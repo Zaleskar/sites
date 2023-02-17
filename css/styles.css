@@ -50,6 +50,52 @@ body {
     overflow-x: hidden;     
 }
 
+.container_time {
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(39, 37, 37);
+    height:500px;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.time {
+    background: conic-gradient(from -.5turn at bottom right, deeppink, cyan, rebeccapurple);
+    height:1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: text-top;
+    transition: all 0.5s ease;   
+    overflow-x: hidden;     
+}
+
+.grocery {
+    background-image:url(https://media.freestocktextures.com/cache/b9/71/b97113e32d32944ef1daad2644f1882d.jpg);
+    background-size: cover;
+    height:1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: text-top;
+    transition: all 0.5s ease;   
+    overflow-x: hidden;     
+}
+
+#container_grocery {
+    background-color: white;
+    height:800px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    box-shadow:5px 5px 20px 10px black ;
+}
+
 .message-pass {
     background: rgb(2,0,36);
     background: linear-gradient(172deg, rgba(2,0,36,1) 0%, rgba(7,95,156,1) 56%);
@@ -86,6 +132,17 @@ body {
     box-shadow:0px 0px 20px 10px black ;
 }
 
+.counter-button {
+    background-color: rgb(197, 122, 247);
+    padding: 25px 40px;
+    border: none;
+    border-radius: 3px;
+    font-size: larger;
+    margin-top: 50px;
+    transition: all 0.5s ease;
+   
+}
+
 .msg-button {
     position: relative;
     bottom: 10px;
@@ -105,19 +162,14 @@ body {
 
 #output-msg {
     font-size:50px;
-    font-family:'Tajawal', sans-serif; 
-
-    
+    font-family:'Tajawal', sans-serif;     
 }
 
 input {
     height:50px;
     width:400px;
     font-size: 45px;
-
 }
-
-
 
 .hexbutton:hover {
     background-color: rgb(222, 49, 84);
@@ -273,6 +325,26 @@ a:hover {
     border-radius: 15px;  
     font-size: 50px; 
     word-wrap: break-word;
+}
+
+h2 {
+    color: blue;
+    font-family:'Dancing Script', cursive;
+    font-size: 50px;
+    margin-right: 200px;
+}
+
+#allitems {
+    height:600px;
+    width: auto;
+    overflow-x: hidden;
+
+}
+
+h3 {
+    color:white;
+    font-size: 50px;
+    text-align: center;
 }
 
 
