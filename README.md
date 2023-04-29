@@ -1,3 +1,3 @@
-# sites.g
+# sites.github.io
 early work, practice 
 
